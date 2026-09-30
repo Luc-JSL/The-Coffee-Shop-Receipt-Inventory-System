@@ -5,13 +5,18 @@
             "name": "Run Coffee Shop",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceFolder}\\main.exe",
+            "program": "${workspaceFolder}\\coffee-shop.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
-            "environment": [],
+            "environment": [
+                {
+                    "name": "PATH",
+                    "value": "C:/msys64/ucrt64/bin;${env:PATH}"
+                }
+            ],
             "console": "integratedTerminal",
-            "preLaunchTask": "C/C++: g++.exe build active file"
+            "preLaunchTask": "C++: Build Coffee Shop"
         }
     ]
 }
